@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Likes Dislikes
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <button ion-button [class]="likeClass" (click)="like()">
+    Likes | <span class="likes-counter">{{ likes }}</span>
+  </button>
+
+  <button ion-button [class]="dislikeClass" (click)="dislike()">
+    Dislikes | <span class="dislikes-counter">{{ dislikes }}</span>
+  </button>
+
+</ion-content>
